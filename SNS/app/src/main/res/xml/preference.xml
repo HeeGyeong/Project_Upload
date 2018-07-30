@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="타이틀">
+        <ListPreference
+            android:dialogTitle="클릭시 나타나는 다이얼로그"
+            android:entries="@array/engine_entries"
+            android:entryValues="@array/engine_values"
+            android:key="searching_engine_setting"
+            android:summary="리스트 설정 항목 설명내용"
+            android:title="리스트 설정 항목 타이틀"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_category"
+            android:title="카데고리 추가/수정" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="설정" />
+        <item
+            android:id="@+id/nav_delete"
+            android:icon="@drawable/ic_delete_history"
+            android:title="삭제 내역" />
+        <item
+            android:id="@+id/nav_consumption"
+            android:icon="@drawable/ic_consumption_graph"
+            android:title="소비 성향" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="문의" />
+        </menu>
+    </item>
+</menu>

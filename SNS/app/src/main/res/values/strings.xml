@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SNS</string>
+    <string name="setting">설정</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="invitation_title">초대초대</string>
+    <string name="message">메세지</string>
+    <string name="link">링크</string>
+    <string name="text">텍스트</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

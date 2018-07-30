@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/chart1"
+        android:title="원 차트"/>
+    <item android:id="@+id/chart2"
+        android:title="막대 차트"/>
+    <item android:id="@+id/chart3"
+        android:title="선 차트"/>
+
+
+</menu>

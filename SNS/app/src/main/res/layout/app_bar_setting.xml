@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.jsouptest.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="계정 및 그룹생성"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/setting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="계정 생성"
+            android:gravity="left"
+            android:paddingTop="13dp"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="초대 및 공유"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/setting_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="그룹 초대"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingTop="13dp"
+            android:clickable="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp"
+            android:paddingBottom="10dp"
+            android:clickable="true"
+            android:id="@+id/participate_"
+            android:gravity="left"
+            android:text="그룹 참가"
+            android:linksClickable="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp"
+            android:paddingBottom="10dp"
+            android:clickable="true"
+            android:id="@+id/leave"
+            android:gravity="left"
+            android:text="그룹 탈퇴"
+            android:linksClickable="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="푸쉬 알림설정"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tablerow">
+                <TextView
+                    android:id="@+id/setting_push_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="알림 기간설정"
+                    android:gravity="left"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/settingday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="기간설정"
+                    android:gravity="left"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"/>
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tablerow2">
+                <TextView
+                    android:id="@+id/setting_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="알림 시간설정"
+                    android:gravity="left"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="10dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/settingtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="시간을 설정해주세요"
+                    android:gravity="left"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"/>
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary" />
+        <ToggleButton
+            android:id="@+id/setting_push_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textOn="알람 On"
+            android:textOff="알람 Off"
+            style="?android:attr/borderlessButtonStyle"
+            android:paddingTop="13dp"
+            android:paddingBottom="10dp"
+            android:textSize="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자동 만료"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tablerow3">
+                <TextView
+                    android:id="@+id/setting_expire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="만료 기간설정"
+                    android:gravity="left"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/expire_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="기간설정"
+                    android:gravity="left"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"/>
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+</RelativeLayout>
